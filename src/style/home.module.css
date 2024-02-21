@@ -1,0 +1,211 @@
+.slider{
+    width: 100%;
+    height: calc(100vh - 92px);
+    
+}
+.sliderContainer{
+    width:100%  ;
+    background-color: rgba(86, 86, 86, 0.674);
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+@keyframes swap {
+    from {
+        right:0
+    }
+
+    to {
+        right:100vw
+    }
+}
+.slider img{
+   min-width: 100vw;
+    height: calc(100vh - 92px);
+    position: relative;
+    transition: left .3s;
+}
+
+img.swap{
+        animation: swap 1s;
+}
+
+.mainContent{
+    width: 100%;
+    height: calc(100vh - 92px);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center
+}
+.mainContent h1{
+    color:#fff;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 94px;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 577px;
+}
+.mainContent h1 span{
+    color:rgba(255, 90, 48, 1);
+}
+.mainContent h3{
+    margin-top: 24px;
+    margin-bottom: 60px;
+    width: 595px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#fff;
+}
+.mainContent a{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.btnMore{
+    margin-right: 25px;
+}
+.btnArrow{
+    position: relative;
+    z-index: 1;
+    left:0
+
+}
+
+.videoBlock{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoBlock h2{
+
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 59.8px;
+    color:#000
+}
+
+.video{
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    background: lightgray;
+    margin-bottom: 180px;
+}
+
+.valuesBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 270px;
+}
+.valuesBlock h2{
+    margin-bottom: 24px;
+    font-weight: 700;
+    color:#000;
+    font-size: 46px;
+}
+.valuesBlock h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color:#000;
+    margin-bottom: 60px;
+}
+.valuesBlock ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.valuesBlock li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 258px;
+    text-align: center;
+}
+.valuesBlock h4{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    color:#000;
+}
+.valuesBlock p{
+    color:rgba(120, 122, 128, 1);
+    font-weight: 400;
+    font-size: 16px;
+}
+.valuesBlock span{
+    height: 188px;
+    width: 1px;
+    background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+}
+
+.service{
+    background:url(../img/service_bg.jpg) ;
+}
+.serviceBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviceBlock h3{
+    margin-top: 212px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 46px;
+}
+.serviceBlock p{
+    font-weight: 400;
+    line-height: 27px;
+    color:rgba(120, 122, 128, 1);
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+.serviceBlock li{
+    background-color: rgba(229, 232, 237, 1);
+    width: 285px;
+    height: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.serviceBlock li p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color:#000;
+    margin: 0;
+    margin-top: 24px;
+}
+.serviceBlock img{
+    width: 52px;
+    height: 52px;
+}
+.serviceBlock ul{
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.serviceUnder{
+    display: flex;
+    margin-bottom: 85px;
+}
+.serviceUnder h4{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color:#000;
+    margin-right: 40px;
+}

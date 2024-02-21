@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    /* position: absolute; */
+}
+.header a{
+    color:rgba(66, 69, 81, 1);
+    text-decoration: none;
+}
+.header a.active{
+    color:rgba(255, 90, 48, 1)
+}
+.navBar{
+    margin-right: 170px;
+}
+.navBar ul{
+    display: flex;
+}
+.navBar li{
+    padding-right: 40px;
+}
+
+.navBar li:last-child{
+    padding-right: 0px;
+}
+
+.contact{
+    display: flex;
+}
+
+.containerContact{
+    display: flex;
+}
+.containerContact:first-child{
+    margin-right: 35px;
+}
+.contactText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}

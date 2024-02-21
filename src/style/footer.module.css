@@ -1,0 +1,89 @@
+.footer{
+    background: #1E212C;
+}
+.footerTop{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerTop p{
+    color:rgb(255,255,255,.45);
+    margin-bottom: 49px;
+}
+.footerTop h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color:#FFFFFF;
+    margin-bottom: 25px;
+}
+.footerTop input{
+    width: 495px;
+    height: 44px;
+    padding: 11px 16px;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px 0 0 4px ;
+}
+.footerTop button{
+    width: 131px;
+    height: 44px;
+    background-color: #FF5A30;
+    border:none;
+    border-radius: 0 4px 4px 0;
+}
+.footerTop div:first-child{
+    width: 493px;
+}
+.logoIcons{
+    display: flex;
+}
+.logoIcons ul{
+    margin-left: 60px;
+    display: flex;
+}
+.logoIcons li{
+    margin-right: 20px;
+}
+.logoIcons li:last-child{
+    margin-right: 0;
+}
+.footerLogo{
+    width: 142px;
+    height: 24px;
+    margin-bottom: 24px;
+}
+.footerForm{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.footerMid{
+    display: flex;
+    color:#fff;
+    margin-bottom: 60px;
+}
+.midContainer{
+    margin-right: 125px;
+}
+.midContainer h3{
+    margin-bottom: 13px;
+    color:#fff
+}
+.midContainer li{
+    padding: 2px 0;
+}
+.midContainer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255, .45);
+}
+.midContainer span{
+    color: rgb(255, 255, 255, .45);
+}
+
+
+.footerBottom{
+    color:#fff;
+    padding-bottom: 80px;
+}
