@@ -1,7 +1,7 @@
 import { FC } from "react";
 import rootCls from "../../style/index.module.css";
 import cls from "../../style/home.module.css";
-import like from "../../img/icon-box/ic-like.svg";
+import like from "../../img/icon/ic-like.svg";
 
 const ValuesBlock: FC = () => {
   const values = [

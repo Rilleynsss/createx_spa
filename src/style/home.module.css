@@ -1,36 +1,3 @@
-.slider{
-    width: 100%;
-    height: calc(100vh - 92px);
-    
-}
-.sliderContainer{
-    width:100%  ;
-    background-color: rgba(86, 86, 86, 0.674);
-    display: flex;
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-}
-@keyframes swap {
-    from {
-        right:0
-    }
-
-    to {
-        right:100vw
-    }
-}
-.slider img{
-   min-width: 100vw;
-    height: calc(100vh - 92px);
-    position: relative;
-    transition: left .3s;
-}
-
-img.swap{
-        animation: swap 1s;
-}
-
 .mainContent{
     width: 100%;
     height: calc(100vh - 92px);
@@ -71,12 +38,35 @@ img.swap{
 .btnMore{
     margin-right: 25px;
 }
-.btnArrow{
-    position: relative;
-    z-index: 1;
-    left:0
 
+.mainCountSlides{
+    display: flex;
+    margin-top: 179px;
 }
+.mainCountSlides li{
+        font-family: Ubuntu;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#fff;
+        margin: 0 2px;
+        opacity: .4;
+        transition: all .3s;
+}
+.mainCountSlides li.countActive{
+    opacity: 1;
+}
+.mainCountSlides li span{
+    margin-top: 12px;
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 178px;
+}
+
+
 
 .videoBlock{
     margin-top: 120px;

@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import Slider from "./Slider";
 import { Link } from "react-router-dom";
 import cls from "../../style/home.module.css";
@@ -7,11 +7,14 @@ import bg from "../../img/bg-image.jpg";
 
 const MainBlock: FC = () => {
   const slides = [bg, bg, bg, bg];
+  const [slideCount, getSlideCount] = useState(0);
 
-  const [slideNumber, setSlideNumber] = useState(0);
+  useEffect(() => {
+    console.log(slideCount);
+  }, [slideCount]);
   return (
     <div>
-      <Slider slides={slides}>
+      <Slider slides={slides} getSlideCount={getSlideCount}>
         <div className={rootCls.container}>
           <div className={cls.mainContent}>
             <h1>
@@ -34,12 +37,15 @@ const MainBlock: FC = () => {
                 SUBMIT REQUEST
               </button>
             </div>
-            <div>
-              <button>01</button>
-              <button>02</button>
-              <button>03</button>
-              <button>04</button>
-            </div>
+            <ul className={cls.mainCountSlides}>
+              {slides.map((value, index) => {
+                return (
+                  <li className={slideCount === index ? cls.countActive : ""}>
+                    0{index + 1} <span></span>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </Slider>
