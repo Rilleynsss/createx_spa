@@ -6,6 +6,7 @@ import { ReactComponent as Plan } from "../../img/icon/service/ic-plan.svg";
 import { ReactComponent as Pantone } from "../../img/icon/service/ic-pantone.svg";
 import { ReactComponent as Paint } from "../../img/icon/service/ic-painting.svg";
 import serviceItemHoveredBg from "../../img/icon/service/image.jpg";
+import UnderBlock from "../UnderBlock";
 
 const ServiceBlock: FC = () => {
   // const serviceData = [
@@ -63,12 +64,11 @@ const ServiceBlock: FC = () => {
             <p>Repairs</p>
           </li>
         </ul>
-        <div className={cls.serviceUnder}>
-          <h4>Learn more about our services</h4>
-          <button className={[rootCls.button, rootCls.primary].join(" ")}>
-            View services
-          </button>
-        </div>
+        <UnderBlock
+          text="Learn more about our services"
+          textBtn="View services"
+          link="/service"
+        />
       </div>
     </div>
   );

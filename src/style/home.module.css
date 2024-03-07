@@ -262,15 +262,97 @@
     justify-content: space-around;
 }
 
-.serviceUnder {
+.portfolioBlock{
     display: flex;
-    margin-bottom: 85px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolioBlockHeader{
+    margin-top: 120px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.portfolioBlockHeader h3{
+    width: 705px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 59.8px;
+}
+.porfolioArrowsContainer{
+    display: flex;
+}
+.portfolioArrow{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background:none;
+    transition: all .3s;
 }
 
-.serviceUnder h4 {
+.portfolioArrow:hover{
+    background-color: rgba(255, 90, 48, 1);
+}
+.portfolioArrow:hover path{
+    fill: white;
+}
+.portfolioCards{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.portfolioCardItem{
+    min-width: 390px;
+    height: 440px;
+    border-radius: 4px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03);    
+    box-shadow: 0px 12px 10px -6px rgba(154, 156, 165, 0.04);
+    box-shadow: 0px 30px 24px -10px rgba(154, 156, 165, 0.05);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    transition: all .5s;
+}
+.portfolioCardItem img{
+    width: 390px;
+    height: 345px;
+}
+.portfolioCardItem h4{
+    color:rgba(30, 33, 44, 1);
     font-weight: 700;
-    font-size: 28px;
-    line-height: 42px;
-    color: #000;
-    margin-right: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+.portfolioCardItem p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.portfolioCardItemContent{
+    height: 95px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    transition: all .5s;
+}
+.portfolioCardItemContent a{
+    color:rgba(255, 90, 48, 1);
+}
+
+.portfolioCardItem:hover .portfolioCardItemContent{
+    transform: translateY(-70px);
 }

@@ -1,0 +1,20 @@
+.serviceUnder {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+.serviceUnder a{
+    color:#fff;
+    text-transform: uppercase;
+}
+.serviceBlockMargin{
+    
+}
+.serviceUnder h4 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color: #000;
+    margin-right: 40px;
+}
