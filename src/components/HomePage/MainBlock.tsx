@@ -9,9 +9,7 @@ const MainBlock: FC = () => {
   const slides = [bg, bg, bg, bg];
   const [slideCount, getSlideCount] = useState(0);
 
-  useEffect(() => {
-    console.log(slideCount);
-  }, [slideCount]);
+  useEffect(() => {}, [slideCount]);
   return (
     <div>
       <Slider slides={slides} getSlideCount={getSlideCount}>
@@ -40,7 +38,10 @@ const MainBlock: FC = () => {
             <ul className={cls.mainCountSlides}>
               {slides.map((value, index) => {
                 return (
-                  <li className={slideCount === index ? cls.countActive : ""}>
+                  <li
+                    key={index}
+                    className={slideCount === index ? cls.countActive : ""}
+                  >
                     0{index + 1} <span></span>
                   </li>
                 );

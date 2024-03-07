@@ -12,29 +12,17 @@ interface ISlider {
 const Slider: FC<ISlider> = ({ children, slides, getSlideCount }) => {
   const [slideCount, setSlideCount] = useState(0);
   const [imgStyle, setImgStyle] = useState([cls.sliderImg]);
-
   useEffect(() => {
-    if (slideCount === 0) {
-      getSlideCount(0);
-    } else {
+    if (slideCount < 0) {
+      console.log(-slideCount / 100);
       getSlideCount(-slideCount / 100);
+    } else {
+      getSlideCount(0);
     }
-
-    setTimeout(() => {
-      changeSlide();
-    }, 7000);
-  }, [slideCount]);
+  }, [slideCount, getSlideCount]);
 
   const changeSlide = (event?: string) => {
     setImgStyle((prev) => [...prev, cls.swap]);
-
-    setTimeout(() => {
-      setSlideCount((prev) => prev - 100);
-      if (slideCount <= -300) {
-        setSlideCount(0);
-      }
-    }, 1000);
-
     if (event === "next") {
       setImgStyle((prev) => [...prev, cls.swap]);
 
@@ -44,13 +32,11 @@ const Slider: FC<ISlider> = ({ children, slides, getSlideCount }) => {
       }
     } else if (event === "prev") {
       setImgStyle((prev) => [...prev, cls.reverseSwap]);
-      // clearTimeout(prevSlideTimeout)
       setSlideCount((prev) => prev + 100);
       if (slideCount === 0) {
-        setSlideCount(-400);
+        setSlideCount(-300);
       }
     }
-
     setTimeout(() => {
       setImgStyle([cls.sliderImg]);
     }, 1000);

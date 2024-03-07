@@ -1,8 +1,20 @@
 import { FC } from "react";
 import rootCls from "../../style/index.module.css";
 import cls from "../../style/home.module.css";
-import ic_brick from "../../img/service/ic-construction.png";
+import { ReactComponent as Bricks } from "../../img/icon/service/ic-construction.svg";
+import { ReactComponent as Plan } from "../../img/icon/service/ic-plan.svg";
+import { ReactComponent as Pantone } from "../../img/icon/service/ic-pantone.svg";
+import { ReactComponent as Paint } from "../../img/icon/service/ic-painting.svg";
+import serviceItemHoveredBg from "../../img/icon/service/image.jpg";
+
 const ServiceBlock: FC = () => {
+  // const serviceData = [
+  //   {
+  //     svgItem:{
+  //       path:
+  //     }
+  //   }
+  // ]
   return (
     <div className={cls.service}>
       <div className={[rootCls.container, cls.serviceBlock].join(" ")}>
@@ -12,21 +24,43 @@ const ServiceBlock: FC = () => {
           of construction services.
         </p>
         <ul>
-          <li>
-            <img src={ic_brick} alt="" />
+          <li className={cls.serviceBlockItem}>
+            <img
+              src={serviceItemHoveredBg}
+              className={cls.serviceBlockItemHovered}
+              alt=""
+            />
+            <Bricks className={cls.serviceIcon} color="red" />
             <p>Construction</p>
           </li>
-          <li>
-            <img src={ic_brick} alt="" />
-            <p>Construction</p>
+          <li className={cls.serviceBlockItem}>
+            <img
+              src={serviceItemHoveredBg}
+              className={cls.serviceBlockItemHovered}
+              alt=""
+            />
+            <Plan className={cls.serviceIcon} color="red" />
+
+            <p>Project Development</p>
           </li>
-          <li>
-            <img src={ic_brick} alt="" />
-            <p>Construction</p>
+          <li className={cls.serviceBlockItem}>
+            <img
+              src={serviceItemHoveredBg}
+              className={cls.serviceBlockItemHovered}
+              alt=""
+            />
+            <Pantone className={cls.serviceIcon} color="red" />
+
+            <p>Interior Design</p>
           </li>
-          <li>
-            <img src={ic_brick} alt="" />
-            <p>Construction</p>
+          <li className={cls.serviceBlockItem}>
+            <img
+              src={serviceItemHoveredBg}
+              className={cls.serviceBlockItemHovered}
+              alt=""
+            />
+            <Paint className={cls.serviceIcon} color="red" />
+            <p>Repairs</p>
           </li>
         </ul>
         <div className={cls.serviceUnder}>
