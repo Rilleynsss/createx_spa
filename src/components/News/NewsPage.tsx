@@ -1,7 +1,12 @@
 import { FC } from "react";
+import CallBackForm from "../CallBackForm";
 
 const NewsPage: FC = () => {
-  return <div>NewPage</div>;
+  return (
+    <div>
+      <CallBackForm />
+    </div>
+  );
 };
 
 export default NewsPage;

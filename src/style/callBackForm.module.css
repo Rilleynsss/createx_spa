@@ -1,0 +1,56 @@
+.callBackForm{
+    width: 100%;
+    height: 826px;
+    background: url('../img/image.jpg');
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.callBackFormContainer{
+    margin-right: 345px;
+    border-radius: 4px;
+    width: 495px;
+    height: 666px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.callBackFormContainer h3{
+    margin-top: 48px;
+    margin-bottom: 24px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: center;
+}
+.callBackFormContainer form{
+        display: flex;
+            flex-direction: column;
+            padding: 0 40px;
+}
+.callBackFormContainer form input{
+    padding: 11px 16px;
+    border:1px solid rgba(215, 218, 221, 1);
+    background: rgba(244, 245, 246, 1);
+    outline: none;
+    margin-bottom: 20px;
+}
+.callBackFormContainer form label{
+    margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+}
+.cbCheckBox{
+    display: flex;
+    margin-bottom: 24px;
+}
+.cbCheckBox label{
+    width: 387px;
+}
+.CheckBoxAgree{
+    margin-right: 12px; 
+}
