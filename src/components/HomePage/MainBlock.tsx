@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import cls from "../../style/home.module.css";
 import rootCls from "../../style/index.module.css";
 import bg from "../../img/bg-image.jpg";
+import Button, { varianBtnStyles } from "../UI/Button/Button";
 
 const MainBlock: FC = () => {
   const slides = [bg, bg, bg, bg];
@@ -24,16 +25,16 @@ const MainBlock: FC = () => {
               turpis purus eget pellentesque integer ipsum elementum felis.
             </h3>
             <div>
-              <button
-                className={[rootCls.button, rootCls.main, cls.btnMore].join(
-                  " "
-                )}
+              <Button
+                variant={varianBtnStyles.BUTTON_MAIN}
+                isLink={true}
+                linkHref="/about"
               >
-                <Link to="/about">Learn more about us</Link>
-              </button>
-              <button className={[rootCls.button, rootCls.primary].join(" ")}>
+                Learn more about us
+              </Button>
+              <Button variant={varianBtnStyles.BUTTON_PRIMARY}>
                 SUBMIT REQUEST
-              </button>
+              </Button>
             </div>
             <ul className={cls.mainCountSlides}>
               {slides.map((value, index) => {
