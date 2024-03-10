@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Left } from "../../img/icon/Left.svg";
 import { ReactComponent as Right } from "../../img/icon/Right.svg";
 import UnderBlock from "../UnderBlock";
+import CardItemPortfolio from "../UI/CardItemPortfolio/CardItemPortfolio";
 
 const cardItems = [
   {
@@ -73,24 +74,16 @@ const PortfolioBlock: FC = () => {
         </div>
       </div>
       <ul className={cls.portfolioCards}>
-        {cardItems.map((item) => {
+        {cardItems.map((item, idx) => {
           return (
-            <li
-              key={item.h4}
-              style={{ transform: `translateX(${-450 * cardsCount}px)` }}
-              className={cls.portfolioCardItem}
-            >
-              <img src={item.img} alt="" />
-              <div className={cls.portfolioCardItemContent}>
-                <h4>{item.h4}</h4>
-                <p>{item.p}</p>
-                <button
-                  className={[rootCls.button, rootCls.secondary].join(" ")}
-                >
-                  <Link to="/work">{item.btn}</Link>
-                </button>
-              </div>
-            </li>
+            <CardItemPortfolio
+              btnText={item.btn}
+              cardsCount={cardsCount}
+              h4={item.h4}
+              img={item.img}
+              p={item.p}
+              key={idx}
+            />
           );
         })}
       </ul>

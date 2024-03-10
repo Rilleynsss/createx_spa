@@ -25,11 +25,17 @@
     border-radius: 4px;
     border: 1px solid rgba(255, 90, 48, 1);
     background-color: transparent;
-    color: rgba(255, 90, 48, 1);
+    /* color: rgba(255, 90, 48, 1); */
 }
-.button.secondary{
-    color: rgba(255, 90, 48, 1);
-    text-transform: uppercase;
+
+.button.secondary:hover{
+        background-color: rgb(235, 61, 18, 1);
+        border: none;
+        color: #00ff0d;
+        border-radius: 4px;
+}
+.button.secondary:hover a {
+    color:#fff;
 }
 
 .button.main {
