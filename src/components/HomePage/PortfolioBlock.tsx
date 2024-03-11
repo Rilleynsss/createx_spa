@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
 import cls from "../../style/home.module.css";
+import fontCls from "../../style/fontSettings.module.css";
 import redBuild from "../../img/portfolio-card/image.jpg";
 import lightBuild from "../../img/portfolio-card/image.png";
 import rootCls from "../../style/index.module.css";
-import { Link } from "react-router-dom";
 import { ReactComponent as Left } from "../../img/icon/Left.svg";
 import { ReactComponent as Right } from "../../img/icon/Right.svg";
 import UnderBlock from "../UnderBlock";
@@ -51,7 +51,13 @@ const PortfolioBlock: FC = () => {
   return (
     <div className={rootCls.container}>
       <div className={cls.portfolioBlockHeader}>
-        <h3>Browse our selected projects and learn more about our work</h3>
+        <h2
+          className={[fontCls.fontHeaderBlock, cls.portfolioBlockTitle].join(
+            " "
+          )}
+        >
+          Browse our selected projects and learn more about our work
+        </h2>
         <div className={cls.porfolioArrowsContainer}>
           <button
             className={cls.portfolioArrow}

@@ -7,7 +7,7 @@
 }
 
 .mainContent h1 {
-    color: #fff;
+    color:var(--color-white);
     font-size: 72px;
     font-weight: 700;
     line-height: 94px;
@@ -17,7 +17,7 @@
 }
 
 .mainContent h1 span {
-    color: rgba(255, 90, 48, 1);
+    color: var(--color-primary);
 }
 
 .mainContent h3 {
@@ -165,11 +165,8 @@
     align-items: center;
 }
 
-.serviceBlock h3 {
-    margin-top: 212px;
-    margin-bottom: 24px;
-    font-weight: 700;
-    font-size: 46px;
+.serviceBlock h2 {
+    line-height: 140px;
 }
 
 .serviceBlock p {
@@ -204,7 +201,7 @@
 
 .serviceIcon {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .serviceBlockItemHovered {
@@ -277,11 +274,9 @@
     align-items: end;
 }
 
-.portfolioBlockHeader h3 {
-    width: 705px;
-    font-weight: 700;
-    font-size: 46px;
-    line-height: 59.8px;
+.portfolioBlockTitle {
+    max-width: 705px;
+    text-align: left;
 }
 
 .porfolioArrowsContainer {
@@ -375,12 +370,7 @@
 }
 
 .partnerHeader {
-    margin-top: 80px;
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 0em;
-    text-align: center;
+    line-height: 140px;
 }
 
 .partnerBlockContainer {
@@ -473,7 +463,6 @@
     margin-right: 30px;
 }
 
-.newsListContainer {}
 
 .newsListContainer {
     display: grid;
@@ -555,16 +544,9 @@
     margin: 0 5px;
 }
 .newsHeadTitle{
-    width: 100%;
-    display: flex;
-    justify-content: center;
     color: rgba(30, 33, 44, 1);
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 60px;
+    line-height: 250px;
     text-align: center;
-    margin-bottom: 60px;
-    margin-top: 140px;
 }
 
 .newsContent{

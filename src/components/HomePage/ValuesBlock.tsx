@@ -1,6 +1,7 @@
 import { FC, Fragment } from "react";
 import rootCls from "../../style/index.module.css";
 import cls from "../../style/home.module.css";
+import fontCls from "../../style/fontSettings.module.css";
 import like from "../../img/icon/ic-like.svg";
 
 const ValuesBlock: FC = () => {
@@ -24,7 +25,7 @@ const ValuesBlock: FC = () => {
   ];
   return (
     <div className={[rootCls.container, cls.valuesBlock].join(" ")}>
-      <h2>Our core values</h2>
+      <h2 className={fontCls.fontHeaderBlock}>Our core values</h2>
       <h3>
         Our mission is to set the highest standards for construction sphere.
       </h3>

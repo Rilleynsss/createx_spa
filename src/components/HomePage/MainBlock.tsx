@@ -1,6 +1,5 @@
 import { FC, useEffect, useState } from "react";
 import Slider from "./Slider";
-import { Link } from "react-router-dom";
 import cls from "../../style/home.module.css";
 import rootCls from "../../style/index.module.css";
 import bg from "../../img/bg-image.jpg";

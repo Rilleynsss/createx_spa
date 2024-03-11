@@ -1,6 +1,7 @@
 import { FC } from "react";
 import rootCls from "../../style/index.module.css";
 import cls from "../../style/home.module.css";
+import fontCls from "../../style/fontSettings.module.css";
 import imgLarge from "../../img/article/image1.jpg";
 import imgSmallFirst from "../../img/article/image2.jpg";
 import imgSmallSecond from "../../img/article/image3.jpg";
@@ -10,7 +11,9 @@ import UnderBlock from "../UnderBlock";
 const NewsBlock: FC = () => {
   return (
     <div className={rootCls.container}>
-      <h3 className={cls.newsHeadTitle}>Recent news</h3>
+      <h2 className={[fontCls.fontHeaderBlock, cls.newsHeadTitle].join(" ")}>
+        Recent news
+      </h2>
       <div className={cls.newsContent}>
         <ul className={cls.newsListContainer}>
           <li className={cls.newsItemLarge}>

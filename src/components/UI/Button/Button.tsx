@@ -15,7 +15,6 @@ interface IButton {
 }
 
 const Button: FC<IButton> = ({ children, isLink, linkHref, variant }) => {
-  console.log(variant);
   if (isLink) {
     return (
       <button className={variant}>

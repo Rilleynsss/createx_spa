@@ -1,6 +1,7 @@
 import { FC } from "react";
 import rootCls from "../../style/index.module.css";
 import cls from "../../style/home.module.css";
+import fontCls from "../../style/fontSettings.module.css";
 import { ReactComponent as Left } from "../../img/icon/Left.svg";
 import { ReactComponent as Right } from "../../img/icon/Right.svg";
 import { ReactComponent as Logo } from "../../img/InDepth Consulting Logo - Untitled Page.svg";
@@ -11,7 +12,9 @@ const PartnerBlock: FC = () => {
   return (
     <div className={cls.partnerBlock}>
       <div className={[rootCls.container, cls.partnerBlockContainer].join(" ")}>
-        <h3 className={cls.partnerHeader}>Supported by 12+ partners</h3>
+        <h2 className={[fontCls.fontHeaderBlock, cls.partnerHeader].join(" ")}>
+          Supported by 12+ partners
+        </h2>
         <ul className={cls.partnersLogos}>
           <li>
             <Logo />
